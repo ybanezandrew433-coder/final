@@ -1,0 +1,47 @@
+/* BODY & GALAXY BACKGROUND */
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 1px, transparent 2px),
+        radial-gradient(circle at 80% 40%, rgba(255,255,255,0.6) 1px, transparent 2px),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.7) 1px, transparent 2px),
+        radial-gradient(circle at 10% 70%, rgba(255,255,255,0.5) 1px, transparent 2px),
+        radial-gradient(circle at 90% 20%, rgba(255,255,255,0.9) 1px, transparent 2px),
+        linear-gradient(135deg, #0b0d2a, #1b1f4a, #2c1053);
+    background-size:
+        200px 200px,
+        300px 300px,
+        250px 250px,
+        400px 400px,
+        350px 350px,
+        cover;
+    
+}
+
+
+/* SCORE & TIMER */
+#score, #timerDisplay {
+    position: fixed;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 225, 255);
+}
+#score { top: 20px; }
+#timerDisplay { top: 60px; }
+
+/* CIRCLE */
+#circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #c590f7;
+    cursor: pointer;
+    box-shadow: 0 0 10px #e8d6ff,
+                0 0 20px #d096ff,
+                0 0 35px #cc86fa;
+}
